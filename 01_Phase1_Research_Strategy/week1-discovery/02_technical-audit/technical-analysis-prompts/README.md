@@ -1,155 +1,288 @@
-# Technical Audit - Week 1 Discovery
+# Technical Analysis Prompts
 
 ## 🎯 Purpose
-Comprehensive technical assessment of current government systems, websites, and infrastructure to inform technical requirements and identify integration constraints, performance bottlenecks, and compliance gaps.
+This folder contains Claude prompts for analyzing raw technical audit data collected during Week 1 discovery. These prompts transform technical scan results, performance data, and compliance assessments into actionable insights for government digital transformation projects.
 
-## 📋 Overview
-The technical audit runs **parallel to stakeholder interviews** during Week 1, providing objective technical data to complement stakeholder perspectives. Results feed into Week 2 strategy development alongside stakeholder synthesis.
+## 📋 Prompt Overview
 
-## 🔍 Audit Scope
-
-### Website/Digital Asset Analysis
-- **Performance Assessment:** Page load times, Core Web Vitals, mobile optimization
-- **SEO & Content Analysis:** Content quality, structure, accessibility compliance
-- **Technical Architecture:** Current technology stack, hosting environment, integrations
-- **Security Evaluation:** SSL implementation, security headers, vulnerability assessment
-
-### System Integration Analysis  
-- **Current Integrations:** Existing system connections and data flows
-- **API Documentation:** Available interfaces and integration capabilities
-- **Database Assessment:** Data structure, performance, and migration considerations
-- **Legacy System Evaluation:** Technical debt and modernization requirements
-
-### Compliance & Accessibility Audit
-- **Section 508 Compliance:** Current accessibility standard adherence
-- **WCAG 2.1 Assessment:** Detailed accessibility gap analysis
-- **Security Framework Review:** NIST, FedRAMP, and government security compliance
-- **Data Protection Assessment:** Privacy policies, data handling, and protection measures
-
-## 🛠️ Audit Tools & Process
-
-### Primary Tools
-- **Screaming Frog SEO Spider:** Website crawling and technical analysis
-- **Google PageSpeed Insights:** Performance and Core Web Vitals assessment
-- **WAVE Web Accessibility Evaluator:** Accessibility compliance testing
-- **Security Headers Scanner:** Security configuration assessment
-- **Manual Testing:** User experience and functionality validation
-
-### Audit Workflow
-1. **Initial System Assessment** - Inventory current systems and technology stack
-2. **Website Technical Crawl** - Comprehensive site analysis using Screaming Frog
-3. **Performance Baseline** - Establish current performance metrics and bottlenecks
-4. **Security & Compliance Review** - Identify compliance gaps and security vulnerabilities
-5. **Integration Mapping** - Document current system connections and capabilities
-6. **Technical Findings Synthesis** - Analyze audit data using Claude prompts
-
-## 📁 Folder Structure
-
-### audit-data-examples/
-Example audit outputs and data formats to guide technical analysis
-- Sample Screaming Frog exports and configurations
-- Example performance audit reports
-- Sample security assessment findings
-- Integration documentation examples
-
-### findings-templates/
-Standardized templates for documenting technical discoveries
-- Technical findings summary template
-- Performance baseline documentation
-- Security assessment report template
-- Integration inventory template
-
-### technical-analysis-prompts/
-Claude prompts for analyzing raw technical audit data
-- **Website audit analysis prompt** - Processes Screaming Frog and performance data
-- **Security assessment analysis prompt** - Analyzes security scan results
-- **Integration analysis prompt** - Maps current system connections and requirements
-- **Compliance gap analysis prompt** - Identifies accessibility and regulatory gaps
-
-### Tool Setup
-- **screaming-frog-setup.md** - Complete setup guide for primary audit tool
-
-## ⏱️ Timeline & Deliverables
-
-### Week 1 Schedule
-**Days 1-2:** Initial system inventory and tool setup
-**Days 3-4:** Comprehensive website crawl and performance assessment  
-**Days 5-6:** Security and compliance evaluation
-**Days 7:** Technical findings analysis and documentation
-
-### Key Deliverables
-- **Technical System Inventory** - Complete catalog of current systems and integrations
-- **Website Performance Baseline** - Current performance metrics and optimization opportunities
-- **Security & Compliance Assessment** - Gap analysis and remediation requirements
-- **Technical Constraints Documentation** - Limitations and requirements for new development
-- **Integration Requirements** - Current system integration capabilities and needs
-
-## 🔗 Integration with Stakeholder Analysis
-
-### Complementary Insights
-**Technical audit provides objective data to validate/challenge stakeholder claims:**
-- **Performance complaints** verified with actual metrics
-- **Integration challenges** documented with technical specifications
-- **Compliance concerns** validated with audit findings
-- **Modernization needs** supported with technical evidence
-
-### Week 2 Strategy Input
-Technical audit findings feed directly into:
-- **Technical Requirements Development** - Constraints and opportunities from audit
-- **Information Architecture Design** - Current content and structure analysis
-- **User Journey Mapping** - Technical limitations and enhancement opportunities
-
-## 📊 Success Metrics
-
-### Audit Completeness
-- [ ] All current systems inventoried and documented
-- [ ] Complete website crawl performed and analyzed
-- [ ] Performance baseline established with specific metrics
-- [ ] Security assessment completed with gap identification
-- [ ] Compliance review finished with remediation priorities
-- [ ] Integration capabilities mapped and documented
-
-### Analysis Quality
-- [ ] Technical findings support stakeholder synthesis
-- [ ] Objective data available for all major technical decisions
-- [ ] Compliance gaps clearly identified with remediation paths
-- [ ] Performance optimization opportunities documented
-- [ ] Integration constraints and opportunities clearly defined
-
-## 🚨 Common Issues & Solutions
-
-### Audit Challenges
-**Limited System Access:** Work with IT stakeholders to gain appropriate access levels
-**Legacy System Documentation:** Focus on interface analysis and observable behavior
-**Security Restrictions:** Use external analysis tools and coordinate with security team
-**Large Site Complexity:** Prioritize critical user paths and high-traffic pages
-
-### Quality Assurance
-**Data Validation:** Cross-reference audit findings with stakeholder feedback
-**Completeness Check:** Ensure all critical systems and integrations covered
-**Compliance Focus:** Prioritize government-specific requirements and standards
-**Performance Reality:** Validate performance issues with real user scenarios
-
-## 🎯 Best Practices
-
-### Audit Efficiency
-- **Start Early:** Begin audit setup while stakeholder interviews are being scheduled
-- **Parallel Processing:** Run multiple audit tools simultaneously
-- **Stakeholder Coordination:** Involve technical stakeholders in audit planning
-- **Documentation Focus:** Maintain detailed records for future reference
-
-### Government Context
-- **Security Sensitivity:** Coordinate with IT security team before running scans
-- **Compliance Priority:** Focus on government-specific requirements (Section 508, NIST)
-- **Public Access:** Consider public-facing vs. internal system differences
-- **Vendor Relationships:** Document current vendor capabilities and contracts
+### Analysis Workflow
+1. **Collect Technical Data** → Use audit tools to gather raw technical data
+2. **Apply Analysis Prompts** → Use Claude prompts to extract insights from data
+3. **Generate Findings** → Create structured technical findings documents
+4. **Inform Requirements** → Feed insights into Week 2 technical requirements development
 
 ---
 
-**Next Steps:**
-1. **Review tool setup** in `screaming-frog-setup.md`
-2. **Configure audit environment** with appropriate permissions and access
-3. **Begin systematic audit** following the established workflow
-4. **Document findings** using provided templates and analysis prompts
+## AVAILABLE ANALYSIS PROMPTS
 
-**Success Goal:** Complete technical audit provides objective foundation for Week 2 technical requirements development, complementing stakeholder synthesis with measurable data and clear technical constraints.
+### 1. Website Audit Analysis Prompt
+**File:** `website-audit-analysis-prompt.md`
+**Purpose:** Analyzes comprehensive website audit data from crawls, performance tests, and accessibility scans
+**Input:** Screaming Frog exports, PageSpeed Insights results, accessibility scan data
+**Output:** Structured analysis of current website technical status with modernization recommendations
+
+**Key Analysis Areas:**
+- Current technology stack assessment
+- Performance bottleneck identification
+- Content and information architecture issues
+- Mobile optimization gaps
+- SEO and content quality analysis
+
+**Best For:**
+- Understanding current website technical limitations
+- Identifying performance optimization opportunities
+- Planning content migration and IA improvements
+- Setting performance baselines and targets
+
+### 2. Security Assessment Analysis Prompt
+**File:** `security-assessment-analysis-prompt.md`
+**Purpose:** Analyzes security scan results, vulnerability assessments, and compliance evaluations
+**Input:** Vulnerability scan results, penetration test findings, security configuration audits
+**Output:** Comprehensive security gap analysis with government compliance focus
+
+**Key Analysis Areas:**
+- Critical vulnerability identification and prioritization
+- Government security framework compliance (NIST, FedRAMP)
+- Data protection and privacy requirements
+- Authentication and access control assessment
+- Incident response and monitoring capabilities
+
+**Best For:**
+- Identifying critical security risks requiring immediate attention
+- Planning government security compliance implementation
+- Developing security requirements for new system
+- Risk assessment and mitigation strategy development
+
+### 3. Integration Analysis Prompt
+**File:** `integration-analysis-prompt.md`
+**Purpose:** Analyzes current system integrations and defines requirements for new system connectivity
+**Input:** System inventories, API documentation, data flow diagrams, integration test results
+**Output:** Integration requirements and architecture recommendations
+
+**Key Analysis Areas:**
+- Current integration landscape mapping
+- Legacy system constraint identification
+- New system integration requirements definition
+- Data flow and synchronization needs
+- Government data standards compliance
+
+**Best For:**
+- Understanding current system connectivity limitations
+- Planning integration architecture for new system
+- Identifying data management and synchronization requirements
+- Assessing vendor and third-party integration needs
+
+### 4. Compliance Gap Analysis Prompt
+**File:** `compliance-gap-analysis-prompt.md`
+**Purpose:** Analyzes compliance with government regulations and identifies remediation requirements
+**Input:** Compliance audit results, regulatory checklists, accessibility assessments
+**Output:** Comprehensive compliance gap analysis with remediation strategies
+
+**Key Analysis Areas:**
+- Section 508 and WCAG accessibility compliance
+- Government transparency and public access requirements
+- Data protection and privacy compliance
+- Security and cybersecurity framework compliance
+- Domain-specific regulatory requirements
+
+**Best For:**
+- Ensuring all government compliance requirements identified
+- Planning compliance remediation strategies
+- Building compliance requirements into new system architecture
+- Risk assessment for regulatory violations
+
+---
+
+## PROMPT USAGE GUIDE
+
+### Getting Started
+1. **Complete Technical Audit** using the tools and processes in the main technical audit README
+2. **Choose Appropriate Prompt** based on the type of technical data you've collected
+3. **Prepare Input Data** by organizing audit results according to prompt requirements
+4. **Run Analysis** by copying prompt to Claude and providing your technical data
+5. **Review Results** for accuracy and completeness before using in requirements development
+
+### Data Preparation Tips
+**For Website Audit Analysis:**
+- Export complete Screaming Frog crawl data
+- Run PageSpeed Insights on key pages (homepage, top services, forms)
+- Perform accessibility scans using WAVE and manual testing
+- Document current hosting and technology infrastructure
+
+**For Security Assessment Analysis:**
+- Run comprehensive vulnerability scans (with appropriate permissions)
+- Document current security configurations and policies
+- Include results from any penetration testing or security reviews
+- Gather compliance audit results if available
+
+**For Integration Analysis:**
+- Create complete inventory of current systems and their capabilities
+- Document existing integration methods and performance
+- Gather API documentation and technical specifications
+- Test current integration reliability and speed
+
+**For Compliance Gap Analysis:**
+- Research all applicable federal, state, and local regulations
+- Perform accessibility compliance testing against WCAG 2.1 AA
+- Review government transparency and public access requirements
+- Assess data protection and privacy policy compliance
+
+---
+
+## PROMPT INTEGRATION WORKFLOW
+
+### Week 1 Technical Analysis Sequence
+**Days 1-2: Data Collection**
+- Set up audit tools and obtain necessary permissions
+- Perform comprehensive website crawl using Screaming Frog
+- Run initial performance and accessibility scans
+- Begin system inventory and integration documentation
+
+**Days 3-4: Deep Analysis**
+- Complete security vulnerability assessments
+- Perform detailed performance testing across devices
+- Document compliance requirements and current status
+- Analyze integration capabilities and constraints
+
+**Days 5-6: Claude Analysis**
+- Run **Website Audit Analysis Prompt** with collected website data
+- Run **Security Assessment Analysis Prompt** with security scan results
+- Run **Integration Analysis Prompt** with system integration data
+- Run **Compliance Gap Analysis Prompt** with regulatory assessment data
+
+**Day 7: Synthesis & Documentation**
+- Combine insights from all technical analysis prompts
+- Complete **Technical Findings Summary Template**
+- Validate findings with technical stakeholders
+- Prepare technical constraints for Week 2 strategy development
+
+### Integration with Stakeholder Analysis
+**Technical Validation of Stakeholder Claims:**
+- Use technical analysis results to validate or challenge stakeholder technical concerns
+- Identify objective data that supports stakeholder priorities
+- Highlight technical constraints that may affect stakeholder expectations
+- Provide measurable baselines for improvement claims
+
+**Supporting Requirements Development:**
+- Technical analysis provides specific technical constraints for requirements
+- Performance data establishes improvement targets and baselines
+- Security findings define non-negotiable security requirements
+- Integration analysis informs system architecture decisions
+
+---
+
+## PROMPT CUSTOMIZATION GUIDE
+
+### Adapting Prompts for Agency Context
+**Government Level Adaptations:**
+- **Federal Agencies:** Emphasize FedRAMP, FISMA, and federal accessibility requirements
+- **State Agencies:** Focus on state-specific regulations and compliance frameworks
+- **Local Government:** Prioritize local ordinances, transparency requirements, and citizen service delivery
+
+**Domain-Specific Customizations:**
+- **Healthcare Agencies:** Add HIPAA compliance and health data protection requirements
+- **Education Agencies:** Include FERPA compliance and student data protection
+- **Financial Agencies:** Add financial regulation compliance and PCI DSS requirements
+- **Public Safety:** Include criminal justice data protection and emergency service requirements
+
+### Technical Environment Adaptations
+**Legacy System Considerations:**
+- Modify integration analysis for agencies with significant legacy system constraints
+- Adjust security analysis for mixed modern/legacy environments
+- Account for budget constraints affecting modernization scope
+- Consider gradual migration strategies for complex legacy environments
+
+**Resource Constraint Adaptations:**
+- Adjust recommendations based on available technical staff capabilities
+- Consider vendor dependency limitations for agencies with procurement constraints
+- Account for budget limitations affecting technology choices
+- Plan for phased implementation based on resource availability
+
+---
+
+## QUALITY ASSURANCE
+
+### Analysis Quality Standards
+**Completeness Validation:**
+- [ ] All major technical systems and components analyzed
+- [ ] Current state accurately documented with specific metrics
+- [ ] Compliance requirements comprehensively identified
+- [ ] Integration constraints and opportunities clearly defined
+- [ ] Security risks prioritized with realistic remediation timelines
+
+**Accuracy Validation:**
+- [ ] Technical findings validated with IT stakeholders
+- [ ] Performance data collected using standardized tools and methodologies
+- [ ] Security assessments performed with appropriate permissions and scope
+- [ ] Compliance requirements researched and verified with legal/compliance team
+- [ ] Integration capabilities tested and documented with evidence
+
+### Common Analysis Pitfalls
+**Technical Analysis Mistakes to Avoid:**
+- **Incomplete Data Collection:** Missing critical systems or components in analysis
+- **Unrealistic Recommendations:** Suggesting solutions beyond agency technical capabilities
+- **Compliance Oversights:** Missing applicable regulations or requirements
+- **Integration Assumptions:** Assuming integration capabilities without testing
+- **Security Superficiality:** Surface-level security assessment missing critical vulnerabilities
+
+**Quality Improvement Tips:**
+- **Cross-Reference Results:** Validate findings across multiple analysis types
+- **Stakeholder Validation:** Review technical findings with agency technical staff
+- **Documentation Standards:** Maintain consistent documentation and evidence
+- **Timeline Realism:** Ensure implementation timelines account for government constraints
+- **Resource Planning:** Consider actual agency resources and capabilities
+
+---
+
+## TROUBLESHOOTING GUIDE
+
+### Common Technical Analysis Challenges
+**Data Collection Issues:**
+- **Limited System Access:** Work with IT team to gain appropriate access levels
+- **Legacy System Documentation:** Focus on observable behavior and interface analysis
+- **Security Restrictions:** Use external analysis tools and coordinate with security team
+- **Complex Integration Environments:** Prioritize critical integrations and document assumptions
+
+**Analysis Quality Issues:**
+- **Incomplete Audit Data:** Re-run scans with broader scope or different tools
+- **Conflicting Results:** Cross-reference findings and document discrepancies
+- **Tool Limitations:** Use multiple analysis tools and manual validation
+- **Technical Complexity:** Break complex analysis into smaller, manageable components
+
+### When to Seek Additional Expertise
+**Specialist Consultation Needed:**
+- **Complex Security Environments:** Engage cybersecurity specialists for advanced threats
+- **Legacy System Integration:** Consult with specialists in specific legacy technologies
+- **Compliance Complexity:** Work with legal/compliance experts for complex regulatory environments
+- **Performance Optimization:** Engage performance specialists for complex optimization challenges
+
+---
+
+## SUCCESS METRICS
+
+### Technical Analysis Success Criteria
+**Analysis Completeness:**
+- [ ] All technical analysis prompts completed with comprehensive data
+- [ ] Technical findings validated by agency technical stakeholders
+- [ ] Compliance requirements identified and verified
+- [ ] Integration constraints and opportunities clearly documented
+- [ ] Performance baselines established with improvement targets defined
+
+**Requirements Development Readiness:**
+- [ ] Technical constraints clearly defined for requirements development
+- [ ] Performance targets established based on current baseline data
+- [ ] Security requirements defined based on risk assessment and compliance needs
+- [ ] Integration requirements specified with realistic implementation approaches
+- [ ] Compliance requirements integrated into technical architecture planning
+
+**Week 2 Preparation:**
+- [ ] Technical findings summary completed and approved
+- [ ] Technical constraints documented for IA design
+- [ ] Performance requirements established for user journey mapping
+- [ ] Security and compliance requirements ready for technical requirements development
+
+---
+
+**Next Steps:** After completing technical analysis using these prompts, proceed to Week 2 strategy development using the technical findings as input for technical requirements generation, information architecture design, and user journey mapping.
+
+**For Support:** Refer to the main technical audit README for overall process guidance, or contact the technical analysis team lead for specific prompt usage questions.
