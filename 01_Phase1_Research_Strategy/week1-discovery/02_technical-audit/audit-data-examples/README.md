@@ -194,13 +194,13 @@ screaming-frog-exports/
 - `vendor-integration-specs.pdf` - Third-party system integration documentation
 
 **Example System Inventory Structure:**
-```
-System Name | Type | Technology | Integration Method | Data Exchange | Health Status | Business Criticality
-Financial Management | ERP | Oracle | Database Direct | Budget/Accounting | Stable | High
-Permit System | Custom App | .NET | REST API | Application Data | Issues | High
-Email System | SaaS | Office 365 | SMTP/Graph API | Communications | Stable | Medium
-Website CMS | CMS | WordPress | Manual | Content | Stable | Medium
-```
+
+| System Name | Type | Technology | Integration Method | Data Exchange | Health Status | Business Criticality |
+|-------------|------|------------|-------------------|---------------|---------------|---------------------|
+| Financial Management | ERP | Oracle | Database Direct | Budget/Accounting | Stable | High |
+| Permit System | Custom App | .NET | REST API | Application Data | Issues | High |
+| Email System | SaaS | Office 365 | SMTP/Graph API | Communications | Stable | Medium |
+| Website CMS | CMS | WordPress | Manual | Content | Stable | Medium |
 
 ### Integration Testing Results
 **Integration Test Files:**
@@ -221,13 +221,13 @@ Website CMS | CMS | WordPress | Manual | Content | Stable | Medium
 - `accessibility-compliance-gap.xlsx` - Detailed accessibility compliance gaps
 
 **Example FOIA Compliance Data:**
-```
-Requirement | Current Status | Gap Analysis | Remediation Needed
-Public Records Search | Partially Implemented | No advanced search | Add filtering and sorting
-Request Tracking | Not Implemented | No online tracking | Develop tracking system
-Response Timeline | Manual Process | Inconsistent timing | Automate timeline management
-Fee Calculation | Manual | Inconsistent fees | Automated fee calculator
-```
+
+| Requirement | Current Status | Gap Analysis | Remediation Needed |
+|-------------|---------------|--------------|-------------------|
+| Public Records Search | Partially Implemented | No advanced search | Add filtering and sorting |
+| Request Tracking | Not Implemented | No online tracking | Develop tracking system |
+| Response Timeline | Manual Process | Inconsistent timing | Automate timeline management |
+| Fee Calculation | Manual | Inconsistent fees | Automated fee calculator |
 
 ### Government Standards Compliance
 **Standards Assessment Files:**
