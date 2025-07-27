@@ -1,98 +1,275 @@
-# Individual Stakeholder Analysis Prompt
+# Claude Prompt: Individual Interview Analyzer
 
-## When to Use
-After completing stakeholder interviews and having clean transcripts ready for analysis.
+## Purpose
+This prompt transforms raw stakeholder interview transcripts into structured insights for government digital transformation projects. Use this for each individual interview before cross-stakeholder synthesis.
 
-## Required Inputs
-- Clean interview transcript
-- Stakeholder role/title
-- Agency context
-- Project scope
-
-## Claude Prompt Template
-
----
-
-**COPY BELOW THIS LINE:**
-
-# Government Stakeholder Interview Analysis
-
-## Context
-Analyze this government website stakeholder interview to extract insights for a comprehensive digital transformation project spanning 6-18 months.
-
-## Interview Data
-**Stakeholder Role:** [EXACT TITLE FROM INTERVIEW]
-**Agency Context:** [AGENCY NAME AND PRIMARY MISSION/SERVICES]
-**Interview Date:** [DATE]
-**Interview Transcript:**
-[PASTE COMPLETE CLEANED TRANSCRIPT HERE]
-
-## Government-Specific Analysis Required
-
-### 1. Strategic Priorities (Government Context)
-- What are this stakeholder's top 3 stated priorities?
-- How do these priorities align with public service mission?
-- What political or accountability considerations were mentioned?
-- How do priorities balance citizen needs vs. operational efficiency?
-- What inter-agency or external dependencies exist?
-
-### 2. Operational Challenges (Public Service Impact)
-- What specific problems does the current website create for this stakeholder?
-- How do current problems affect citizen services?
-- What seasonal or cyclical factors impact operations?
-- How do staff resources and training needs affect implementation?
-- What emergency or crisis management needs were identified?
-
-### 3. Compliance and Regulatory Requirements
-- What federal, state, or local compliance requirements were mentioned?
-- What security frameworks or standards must be met?
-- What accessibility or inclusion requirements apply?
-- What procurement or contracting constraints exist?
-
-### 4. Technical Constraints (Government Systems)
-- What legacy systems require integration or replacement?
-- What government-specific technology standards apply?
-- What hosting, cloud, or infrastructure limitations exist?
-- What security clearance or access control requirements apply?
-
-### 5. Stakeholder Ecosystem Complexity
-- What approval chains or decision-making processes were described?
-- How do different departments or agencies need to coordinate?
-- What citizen groups or external stakeholders must be considered?
-- What political sensitivities or public relations concerns exist?
-
-### 6. Success Metrics (Public Accountability)
-- How would this stakeholder measure project success?
-- What transparency or reporting requirements must be met?
-- How do success metrics balance efficiency with accessibility?
-- What citizen satisfaction or engagement improvements are expected?
-
-### 7. Implementation Risks (Government-Specific)
-- What procurement or contracting risks could delay the project?
-- How might political changes or leadership transitions affect the project?
-- What public relations or media attention risks need management?
-- How do budget cycles or funding constraints create timeline pressure?
-
-### 8. Quoted Insights
-- What direct quotes best capture this stakeholder's priorities?
-- What phrases indicate strong emotional responses or concerns?
-- What specific examples did they provide of current problems?
-
-### 9. Potential Conflicts with Other Stakeholders
-- What requirements might conflict with other stakeholder needs?
-- What timeline vs. quality tensions were indicated?
-- What budget vs. feature tensions were suggested?
-
-Format the analysis in a structured way that can be easily combined with other stakeholder analyses for cross-stakeholder synthesis.
+## How to Use
+1. **Copy the prompt below** into a new Claude conversation
+2. **Replace [INTERVIEW_TRANSCRIPT]** with the actual transcript
+3. **Specify stakeholder type** (Executive, Operations, Technical, Communications)
+4. **Review and validate** the extracted insights
+5. **Save results** using the provided template format
 
 ---
 
-**END COPY**
+## The Prompt
 
-## Expected Output
-- 9-section structured analysis document
-- Government-specific insights and priorities
-- Compliance requirements identification
-- Stakeholder conflict areas highlighted
-- Direct quotes and emotional indicators
-- Implementation risks and dependencies
+```
+You are analyzing a stakeholder interview transcript for a government digital transformation project using the CivicSpeed methodology. Extract key insights that will inform technical requirements, information architecture, and user journey development.
+
+**INTERVIEW CONTEXT:**
+- Stakeholder Type: [EXECUTIVE/OPERATIONS/TECHNICAL/COMMUNICATIONS]
+- Agency: [AGENCY_NAME]
+- Project: [PROJECT_NAME]
+- Interview Date: [DATE]
+- Interviewer: [NAME]
+- Interviewee: [NAME, TITLE]
+
+**TRANSCRIPT TO ANALYZE:**
+[INTERVIEW_TRANSCRIPT]
+
+**ANALYSIS FRAMEWORK:**
+Extract insights across these 5 critical dimensions:
+
+## 1. USER NEEDS & PAIN POINTS
+**Current Citizen Experience:**
+- What specific problems do citizens face with current services?
+- Where do citizens get frustrated or confused?
+- What workarounds do citizens currently use?
+- Which user groups have the most difficulty?
+
+**Staff Experience:**
+- What daily challenges does staff face?
+- Where do current systems create inefficiencies?
+- What manual processes could be automated?
+- What training or support gaps exist?
+
+## 2. BUSINESS GOALS & PRIORITIES
+**Strategic Objectives:**
+- What are this stakeholder's top 3 priorities for the project?
+- How does this project align with agency mission?
+- What success metrics matter most to this stakeholder?
+- What budget or timeline constraints were mentioned?
+
+**Operational Impact:**
+- How will this project change daily operations?
+- What efficiency gains are expected?
+- What risks or concerns were expressed?
+- What level of change management will be needed?
+
+## 3. TECHNICAL CONSTRAINTS & REQUIREMENTS
+**Current Technology:**
+- What existing systems must be integrated with?
+- What technical limitations were mentioned?
+- What security or compliance requirements are critical?
+- What infrastructure constraints exist?
+
+**Future Technology Needs:**
+- What new capabilities are required?
+- What accessibility requirements were specified?
+- What performance expectations were set?
+- What data management needs were discussed?
+
+## 4. COMPLIANCE & GOVERNANCE
+**Regulatory Requirements:**
+- What specific compliance standards were mentioned?
+- What approval processes must be followed?
+- What audit or reporting requirements exist?
+- What accessibility standards must be met?
+
+**Internal Policies:**
+- What agency policies affect this project?
+- What approval workflows are required?
+- What documentation standards must be followed?
+- What quality assurance processes are needed?
+
+## 5. STAKEHOLDER RELATIONSHIPS & COMMUNICATION
+**Internal Relationships:**
+- How does this stakeholder interact with other departments?
+- What coordination challenges were mentioned?
+- Who are the key decision-makers they work with?
+- What communication preferences were expressed?
+
+**External Relationships:**
+- How does this stakeholder interact with citizens?
+- What partner organizations are involved?
+- What public communication requirements exist?
+- What community engagement is needed?
+
+**OUTPUT FORMAT:**
+Present your analysis using this exact structure:
+
+## STAKEHOLDER PROFILE
+**Name:** [Name, Title]
+**Stakeholder Type:** [Executive/Operations/Technical/Communications]
+**Primary Responsibilities:** [Key areas they oversee]
+**Project Influence Level:** [High/Medium/Low]
+
+## KEY INSIGHTS SUMMARY
+**Top 3 Priorities:**
+1. [Priority 1 with specific details]
+2. [Priority 2 with specific details]  
+3. [Priority 3 with specific details]
+
+**Critical Success Factors:**
+- [Factor 1]
+- [Factor 2]
+- [Factor 3]
+
+**Major Concerns/Risks:**
+- [Concern 1]
+- [Concern 2]
+- [Concern 3]
+
+## DETAILED ANALYSIS
+
+### User Needs & Pain Points
+**Citizen Experience Issues:**
+- [Specific pain point 1]
+- [Specific pain point 2]
+- [Specific pain point 3]
+
+**Staff Experience Issues:**
+- [Specific challenge 1]
+- [Specific challenge 2]
+- [Specific challenge 3]
+
+**User Groups Identified:**
+- [User group 1]: [Specific needs]
+- [User group 2]: [Specific needs]
+- [User group 3]: [Specific needs]
+
+### Business Goals & Priorities
+**Strategic Alignment:**
+- [How project supports agency mission]
+- [Expected business outcomes]
+- [Success metrics mentioned]
+
+**Operational Changes:**
+- [Process changes required]
+- [Efficiency opportunities]
+- [Change management needs]
+
+### Technical Requirements
+**Integration Needs:**
+- [System 1]: [Integration details]
+- [System 2]: [Integration details]
+- [System 3]: [Integration details]
+
+**Performance Requirements:**
+- [Performance expectation 1]
+- [Performance expectation 2]
+- [Performance expectation 3]
+
+**Security/Compliance:**
+- [Security requirement 1]
+- [Compliance standard 1]
+- [Accessibility requirement 1]
+
+### Compliance & Governance
+**Regulatory Compliance:**
+- [Specific regulation 1]: [Requirements]
+- [Specific regulation 2]: [Requirements]
+
+**Internal Processes:**
+- [Approval process 1]
+- [Documentation requirement 1]
+- [Quality standard 1]
+
+### Communication & Relationships
+**Internal Coordination:**
+- [Department/role 1]: [Interaction type]
+- [Department/role 2]: [Interaction type]
+
+**External Communication:**
+- [Stakeholder group 1]: [Communication needs]
+- [Stakeholder group 2]: [Communication needs]
+
+## QUOTES & EVIDENCE
+**Verbatim Quotes:** (Include 3-5 key quotes that capture essential insights)
+1. "[Quote 1]" - [Context/significance]
+2. "[Quote 2]" - [Context/significance]
+3. "[Quote 3]" - [Context/significance]
+
+## IMPLICATIONS FOR DESIGN
+**Information Architecture:**
+- [IA consideration 1 based on this interview]
+- [IA consideration 2 based on this interview]
+
+**User Journey Impact:**
+- [Journey consideration 1]
+- [Journey consideration 2]
+
+**Technical Architecture:**
+- [Technical consideration 1]
+- [Technical consideration 2]
+
+## FOLLOW-UP QUESTIONS
+**Clarifications Needed:**
+- [Question 1 for this stakeholder]
+- [Question 2 for this stakeholder]
+
+**Additional Stakeholders to Interview:**
+- [Suggested person/role 1]: [Why needed]
+- [Suggested person/role 2]: [Why needed]
+
+## VALIDATION CHECKLIST
+- [ ] All 5 analysis dimensions addressed
+- [ ] Specific examples and details captured
+- [ ] Verbatim quotes included for key insights
+- [ ] Technical requirements clearly documented
+- [ ] Compliance requirements identified
+- [ ] User groups and needs specified
+- [ ] Success metrics captured
+- [ ] Risks and concerns documented
+- [ ] Follow-up actions identified
+- [ ] Ready for cross-stakeholder synthesis
+
+**ANALYSIS CONFIDENCE LEVEL:** [High/Medium/Low]
+**ADDITIONAL NOTES:** [Any important context or observations]
+```
+
+**INSTRUCTIONS:**
+1. Be thorough but concise - extract specific, actionable insights
+2. Focus on information that will directly inform technical requirements and design decisions
+3. Identify conflicts or gaps that need resolution in cross-stakeholder synthesis
+4. Capture exact quotes for critical insights to maintain authenticity
+5. Flag any compliance or security requirements that seem non-negotiable
+6. Note where this stakeholder's priorities might conflict with others
+7. Ensure all technical requirements are specific enough to be actionable
+
+---
+
+## Usage Notes
+
+### Before Analysis
+- **Review interview transcript** for completeness
+- **Confirm stakeholder type** classification  
+- **Verify project context** information
+
+### During Analysis
+- **Take your time** - thorough analysis prevents rework
+- **Be specific** - vague insights don't help design decisions
+- **Capture verbatim quotes** - exact words matter for validation
+- **Note confidence levels** - flag where clarification is needed
+
+### After Analysis
+- **Review for completeness** using the validation checklist
+- **Save in structured format** for easy synthesis
+- **Flag urgent issues** that need immediate attention
+- **Prepare for cross-stakeholder synthesis**
+
+### Quality Standards
+- **95% stakeholder satisfaction requirement** means insights must be accurate and complete
+- **Government compliance focus** requires capturing all regulatory requirements
+- **Technical precision** ensures requirements are implementable
+- **Citizen-centered approach** prioritizes user experience insights
+
+---
+
+## File Naming Convention
+Save analysis results as: `Interview-Analysis-[StakeholderType]-[LastName]-[Date].md`
+
+Examples:
+- `Interview-Analysis-Executive-Johnson-2024-03-15.md`
+- `Interview-Analysis-Technical-Rodriguez-2024-03-16.md`
