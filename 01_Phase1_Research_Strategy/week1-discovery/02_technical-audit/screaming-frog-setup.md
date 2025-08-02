@@ -63,9 +63,11 @@ Set up Screaming Frog SEO Spider to collect technical audit data for AI analysis
 
 ---
 
-## 📁 File Organization
+## 📁 File Organization (Local Project Work)
 
-### Naming Convention
+> **Note:** This file organization is for your local project folder, not the GitHub template. Raw Screaming Frog data stays on your computer. Only AI-generated analysis results go into the template's `ai-outputs/` folder.
+
+### Naming Convention (Local Files)
 ```
 [Agency]-[Type]-[Date].xlsx
 
@@ -76,13 +78,16 @@ Denver-Parks-Links-2024-03-15.xlsx
 Denver-Parks-Titles-2024-03-15.xlsx
 ```
 
-### Folder Structure
+### Local Project Folder Structure
 ```
-technical-audit-data/
-├── denver-parks-allpages-2024-03-15.xlsx
-├── denver-parks-images-2024-03-15.xlsx
-├── denver-parks-links-2024-03-15.xlsx
-└── denver-parks-titles-2024-03-15.xlsx
+your-project-name/ (on your computer)
+├── technical-audit-data/
+│   ├── denver-parks-allpages-2024-03-15.xlsx
+│   ├── denver-parks-images-2024-03-15.xlsx
+│   ├── denver-parks-links-2024-03-15.xlsx
+│   └── denver-parks-titles-2024-03-15.xlsx
+└── project-deliverables/
+    └── (AI-generated analysis results saved here)
 ```
 
 ---
