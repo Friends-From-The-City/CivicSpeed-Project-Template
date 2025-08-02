@@ -113,16 +113,20 @@ Generate analysis using this exact structure:
 
 #### Government Compliance Status
 **Section 508 Compliance:**
-- **Current Compliance Level:** [Estimated percentage compliance]
-- **Major Gaps:** [Most significant compliance failures]
-- **Remediation Requirements:** [Steps needed for full compliance]
-- **Testing Recommendations:** [Ongoing compliance monitoring needs]
+- **Current Compliance Level:** [Estimated percentage compliance with detailed gap analysis]
+- **Critical Accessibility Barriers:** [Specific WCAG 2.1 AA failures preventing citizen access]
+- **Screen Reader Compatibility:** [Navigation and form accessibility for assistive technology]
+- **Keyboard Navigation:** [Full site accessibility without mouse interaction]
+- **Color and Contrast:** [Visual accessibility for citizens with visual impairments]
+- **Alternative Text and Media:** [Image, video, and audio accessibility compliance]
+- **Form Accessibility:** [Government form completion accessibility for all citizens]
 
 **WCAG 2.1 AA Compliance:**
-- **Current Compliance Level:** [Estimated percentage compliance]
-- **Critical Failures:** [Most serious accessibility barriers]
-- **Quick Wins:** [Easy fixes with high impact]
-- **Advanced Requirements:** [Complex accessibility enhancements needed]
+- **Perceivable Compliance:** [Text alternatives, captions, color contrast issues]
+- **Operable Compliance:** [Keyboard accessibility, timing, seizure prevention]
+- **Understandable Compliance:** [Readable text, predictable functionality, input assistance]
+- **Robust Compliance:** [Compatibility with assistive technologies]
+- **Quick Wins vs. Complex Fixes:** [Easy accessibility improvements vs. major development needs]
 
 **Open Data & Transparency:**
 - **Public Information Access:** [How well citizens can find required information]
@@ -130,17 +134,25 @@ Generate analysis using this exact structure:
 - **Search Functionality:** [Effectiveness of site search for finding information]
 
 #### Security Assessment
-**Security Headers Analysis:**
-- **HTTP Security Headers:** [Missing or misconfigured security headers]
-- **SSL/TLS Configuration:** [Certificate status and encryption quality]
-- **Content Security Policy:** [CSP implementation and effectiveness]
-- **Data Protection:** [Form security and user data handling]
+**NIST Cybersecurity Framework Compliance:**
+- **Identify:** [Asset management, governance, risk assessment capabilities]
+- **Protect:** [Access control, data security, protective technology implementation]
+- **Detect:** [Continuous monitoring, detection processes, anomaly identification]
+- **Respond:** [Incident response planning, communication, analysis capabilities]
+- **Recover:** [Recovery planning, improvements, communication during recovery]
 
-**Government Security Requirements:**
-- **Authentication Systems:** [Login security and user verification methods]
-- **Data Encryption:** [Protection of citizen information in transit/storage]
-- **Session Management:** [User session security and timeout policies]
-- **Vulnerability Risk:** [Potential security risks for government operations]
+**Authority to Operate (ATO) Requirements:**
+- **Security Control Assessment:** [Required security controls and current implementation status]
+- **Risk Assessment Documentation:** [Security risk analysis and mitigation strategies]
+- **System Security Plan:** [Comprehensive security documentation requirements]
+- **Continuous Monitoring:** [Ongoing security assessment and reporting procedures]
+- **ATO Timeline:** [Realistic timeline for security authorization process]
+
+**Government Security Standards:**
+- **FedRAMP Compliance:** [Federal cloud security requirements if applicable]
+- **State Security Frameworks:** [State-specific security standards and requirements]
+- **Local Security Policies:** [Municipal or county security requirements]
+- **Data Classification:** [Government data classification and protection requirements]
 
 ### TECHNICAL ARCHITECTURE ASSESSMENT
 
