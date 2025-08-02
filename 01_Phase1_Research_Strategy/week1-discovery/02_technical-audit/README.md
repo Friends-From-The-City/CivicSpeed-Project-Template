@@ -1,156 +1,66 @@
-
 # Technical Audit - Week 1 Discovery
 
 ## 🎯 Purpose
-Comprehensive technical assessment of current government systems, websites, and infrastructure to inform technical requirements and identify integration constraints, performance bottlenecks, and compliance gaps.
+Complete technical assessment of government website and systems using AI-accelerated analysis. Runs parallel to stakeholder interviews to provide objective technical data.
 
-## 📋 Overview
-The technical audit runs **parallel to stakeholder interviews** during Week 1, providing objective technical data to complement stakeholder perspectives. Results feed into Week 2 strategy development alongside stakeholder synthesis.
+## 🔍 What You'll Audit
+- **Website Performance:** Load times, mobile optimization, Core Web Vitals
+- **Accessibility Compliance:** Section 508, WCAG 2.1 AA gaps
+- **Technical Architecture:** Current technology stack and limitations  
+- **Security Assessment:** Government compliance and vulnerability review
 
-## 🔍 Audit Scope
+## 🛠️ Simple Workflow
 
-### Website/Digital Asset Analysis
-- **Performance Assessment:** Page load times, Core Web Vitals, mobile optimization
-- **SEO & Content Analysis:** Content quality, structure, accessibility compliance
-- **Technical Architecture:** Current technology stack, hosting environment, integrations
-- **Security Evaluation:** SSL implementation, security headers, vulnerability assessment
+### Day 1-2: Setup
+1. **Install Screaming Frog** using `screaming-frog-setup.md`
+2. **Configure government-friendly settings** (respectful crawling)
+3. **Coordinate with IT team** for large site crawls
 
-### System Integration Analysis  
-- **Current Integrations:** Existing system connections and data flows
-- **API Documentation:** Available interfaces and integration capabilities
-- **Database Assessment:** Data structure, performance, and migration considerations
-- **Legacy System Evaluation:** Technical debt and modernization requirements
+### Day 3-4: Run Audit  
+1. **Crawl website** with Screaming Frog
+2. **Export key data** (All Pages, Images, Links, Titles)
+3. **Organize files** in local project folder
 
-### Compliance & Accessibility Audit
-- **Section 508 Compliance:** Current accessibility standard adherence
-- **WCAG 2.1 Assessment:** Detailed accessibility gap analysis
-- **Security Framework Review:** NIST, FedRAMP, and government security compliance
-- **Data Protection Assessment:** Privacy policies, data handling, and protection measures
+### Day 5: AI Analysis
+1. **Use Technical Analysis Claude prompt** with exported data
+2. **Generate comprehensive audit findings** in minutes
+3. **Save AI outputs** to `ai-outputs/` folder
 
-## 🛠️ Audit Tools & Process
+## 🎯 Your AI-Accelerated Workflow:
+```
+Setup Screaming Frog → Run website crawl → Export audit data
+↓
+Feed data to Claude prompt → Get professional technical analysis
+↓  
+Save results to ai-outputs → Technical audit complete
+```
 
-### Primary Tools
-- **Screaming Frog SEO Spider:** Website crawling and technical analysis
-- **Google PageSpeed Insights:** Performance and Core Web Vitals assessment
-- **WAVE Web Accessibility Evaluator:** Accessibility compliance testing
-- **Security Headers Scanner:** Security configuration assessment
-- **Manual Testing:** User experience and functionality validation
+## 📁 What You'll Deliver:
+- **Technical Findings Summary:** Complete website technical assessment
+- **Performance Baseline:** Current performance metrics and improvement needs
+- **Security Assessment:** Government compliance gaps and requirements
+- **Integration Inventory:** Current systems and connection capabilities
 
-### Audit Workflow
-1. **Initial System Assessment** - Inventory current systems and technology stack
-2. **Website Technical Crawl** - Comprehensive site analysis using Screaming Frog
-3. **Performance Baseline** - Establish current performance metrics and bottlenecks
-4. **Security & Compliance Review** - Identify compliance gaps and security vulnerabilities
-5. **Integration Mapping** - Document current system connections and capabilities
-6. **Technical Findings Synthesis** - Analyze audit data using Claude prompts
+## 🔧 Tools Required:
+- **Screaming Frog SEO Spider:** Primary audit tool (free version works for small sites)
+- **Claude Pro:** Technical analysis prompt processing
+- **Government IT Coordination:** Access and crawling permissions
 
-## 📁 Folder Structure
+## ⏱️ Timeline: 3-5 days (parallel to interviews)
+**Day 1-2:** Setup and coordination  
+**Day 3-4:** Data collection  
+**Day 5:** AI analysis and documentation
 
-### audit-data-examples/
-Example audit outputs and data formats to guide technical analysis
-- Sample Screaming Frog exports and configurations
-- Example performance audit reports
-- Sample security assessment findings
-- Integration documentation examples
+## 🔗 Feeds Into Week 2:
+- **Technical Requirements:** Constraints and opportunities identified
+- **Information Architecture:** Current content structure analysis
+- **User Journey Mapping:** Technical barriers and enhancement possibilities
 
-### findings-templates/
-Standardized templates for documenting technical discoveries
-- Technical findings summary template
-- Performance baseline documentation
-- Security assessment report template
-- Integration inventory template
+## ✅ Success Checklist:
+- [ ] Screaming Frog configured and crawl completed
+- [ ] Key data exports generated and organized
+- [ ] Claude technical analysis completed
+- [ ] All findings saved to `ai-outputs/` folder
+- [ ] Technical insights ready for Week 2 strategy development
 
-### technical-analysis-prompts/
-Claude prompts for analyzing raw technical audit data
-- **Website audit analysis prompt** - Processes Screaming Frog and performance data
-- **Security assessment analysis prompt** - Analyzes security scan results
-- **Integration analysis prompt** - Maps current system connections and requirements
-- **Compliance gap analysis prompt** - Identifies accessibility and regulatory gaps
-
-### Tool Setup
-- **screaming-frog-setup.md** - Complete setup guide for primary audit tool
-
-## ⏱️ Timeline & Deliverables
-
-### Week 1 Schedule
-**Days 1-2:** Initial system inventory and tool setup
-**Days 3-4:** Comprehensive website crawl and performance assessment  
-**Days 5-6:** Security and compliance evaluation
-**Days 7:** Technical findings analysis and documentation
-
-### Key Deliverables
-- **Technical System Inventory** - Complete catalog of current systems and integrations
-- **Website Performance Baseline** - Current performance metrics and optimization opportunities
-- **Security & Compliance Assessment** - Gap analysis and remediation requirements
-- **Technical Constraints Documentation** - Limitations and requirements for new development
-- **Integration Requirements** - Current system integration capabilities and needs
-
-## 🔗 Integration with Stakeholder Analysis
-
-### Complementary Insights
-**Technical audit provides objective data to validate/challenge stakeholder claims:**
-- **Performance complaints** verified with actual metrics
-- **Integration challenges** documented with technical specifications
-- **Compliance concerns** validated with audit findings
-- **Modernization needs** supported with technical evidence
-
-### Week 2 Strategy Input
-Technical audit findings feed directly into:
-- **Technical Requirements Development** - Constraints and opportunities from audit
-- **Information Architecture Design** - Current content and structure analysis
-- **User Journey Mapping** - Technical limitations and enhancement opportunities
-
-## 📊 Success Metrics
-
-### Audit Completeness
-- [ ] All current systems inventoried and documented
-- [ ] Complete website crawl performed and analyzed
-- [ ] Performance baseline established with specific metrics
-- [ ] Security assessment completed with gap identification
-- [ ] Compliance review finished with remediation priorities
-- [ ] Integration capabilities mapped and documented
-
-### Analysis Quality
-- [ ] Technical findings support stakeholder synthesis
-- [ ] Objective data available for all major technical decisions
-- [ ] Compliance gaps clearly identified with remediation paths
-- [ ] Performance optimization opportunities documented
-- [ ] Integration constraints and opportunities clearly defined
-
-## 🚨 Common Issues & Solutions
-
-### Audit Challenges
-**Limited System Access:** Work with IT stakeholders to gain appropriate access levels
-**Legacy System Documentation:** Focus on interface analysis and observable behavior
-**Security Restrictions:** Use external analysis tools and coordinate with security team
-**Large Site Complexity:** Prioritize critical user paths and high-traffic pages
-
-### Quality Assurance
-**Data Validation:** Cross-reference audit findings with stakeholder feedback
-**Completeness Check:** Ensure all critical systems and integrations covered
-**Compliance Focus:** Prioritize government-specific requirements and standards
-**Performance Reality:** Validate performance issues with real user scenarios
-
-## 🎯 Best Practices
-
-### Audit Efficiency
-- **Start Early:** Begin audit setup while stakeholder interviews are being scheduled
-- **Parallel Processing:** Run multiple audit tools simultaneously
-- **Stakeholder Coordination:** Involve technical stakeholders in audit planning
-- **Documentation Focus:** Maintain detailed records for future reference
-
-### Government Context
-- **Security Sensitivity:** Coordinate with IT security team before running scans
-- **Compliance Priority:** Focus on government-specific requirements (Section 508, NIST)
-- **Public Access:** Consider public-facing vs. internal system differences
-- **Vendor Relationships:** Document current vendor capabilities and contracts
-
----
-
-**Next Steps:**
-1. **Review tool setup** in `screaming-frog-setup.md`
-2. **Configure audit environment** with appropriate permissions and access
-3. **Begin systematic audit** following the established workflow
-4. **Document findings** using provided templates and analysis prompts
-
-**Success Goal:** Complete technical audit provides objective foundation for Week 2 technical requirements development, complementing stakeholder synthesis with measurable data and clear technical constraints.
+**Time Investment:** 1-2 days setup + automated analysis = Comprehensive technical foundation for government digital transformation.
