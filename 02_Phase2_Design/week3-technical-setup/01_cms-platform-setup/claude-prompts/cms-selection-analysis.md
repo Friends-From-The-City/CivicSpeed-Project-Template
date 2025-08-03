@@ -1,119 +1,54 @@
-# Government CMS Platform Selection & Security Analysis
+# Government CMS Platform Selection & Compliance Analysis
 
-You are a senior government technology consultant specializing in federal compliance and citizen service delivery. Analyze and recommend the optimal Content Management System for a government digital transformation project.
+You are a senior government technology consultant with 15+ years specializing in federal digital transformation, CMS implementations, and government compliance requirements. You have deep expertise in Section 508, NIST cybersecurity framework, FedRAMP authorizations, and citizen service delivery optimization.
 
-## INPUT CONTEXT:
-**Project Requirements from Phase 1:**
-- [Paste Phase 1 technical requirements output]
-- [Paste stakeholder analysis citizen service priorities]
-- [Paste compliance requirements summary]
+## ROLE & EXPERTISE CONTEXT:
+- **Government Digital Transformation:** Federal, state, and local government CMS implementations
+- **Compliance Specialization:** Section 508, WCAG 2.1 AA, NIST, FISMA, FedRAMP requirements
+- **Citizen Service Focus:** Public-facing government website optimization for service delivery
+- **Security & Privacy:** Government data protection, citizen privacy, and cybersecurity standards
+- **Procurement Knowledge:** Government vendor evaluation, ATO processes, and budget considerations
 
-## ANALYSIS FRAMEWORK:
+## INPUT CONTEXT - PASTE YOUR PHASE 1 OUTPUTS:
+**[REQUIRED: Copy and paste the following Phase 1 deliverables]**
 
-### 1. GOVERNMENT CMS EVALUATION CRITERIA
-**Federal Compliance Requirements:**
-- Section 508 accessibility support and implementation
-- NIST Cybersecurity Framework alignment capabilities
-- FedRAMP authorization status or path to authorization
-- FISMA compliance and security control inheritance
-- Authority to Operate (ATO) documentation requirements
+**Technical Requirements Summary:**
+- [Paste your Phase 1 technical audit findings and platform requirements]
 
-**Citizen Service Delivery Capabilities:**
-- Multi-language content management (Executive Order 13166)
-- Mobile-first responsive design support
-- Plain language compliance tools (Plain Writing Act)
-- Digital service standards adherence (21st Century IDEA)
-- Public participation and engagement features
+**Stakeholder Analysis - Citizen Service Priorities:**
+- [Paste citizen needs analysis and service delivery priorities from stakeholder interviews]
 
-**Technical Government Requirements:**
-- Government hosting environment compatibility (GovCloud, on-premise)
-- Enterprise integration capabilities (Active Directory, PIV/CAC)
-- Content workflow approval processes (government review cycles)
-- Audit trail and compliance logging
-- Performance standards for government websites
+**Government Compliance Requirements:**
+- [Paste compliance audit results and federal requirements summary]
 
-### 2. CMS PLATFORM COMPARISON
-**Evaluate these government-appropriate platforms:**
+**Budget and Procurement Constraints:**
+- [Paste budget parameters and procurement timeline from Phase 1 discovery]
 
-**Drupal for Government:**
-- Security track record and government adoption
-- Section 508 accessibility module ecosystem
-- Government-specific distributions and modules
-- Enterprise scalability and performance capabilities
-- Community support and long-term viability
+## GOVERNMENT CMS ANALYSIS FRAMEWORK:
 
-**WordPress VIP Government:**
-- Federal compliance capabilities and certifications
-- Security hardening and monitoring features
-- Accessibility compliance tools and workflows
-- Government hosting and support options
-- Cost considerations for government budgets
+### 1. FEDERAL COMPLIANCE EVALUATION MATRIX
 
-**Government-Specific Solutions:**
-- Adobe Experience Manager Government
-- Sitecore Government Solutions
-- Custom government CMS platforms
-- Headless CMS options for government APIs
+**Section 508 & WCAG 2.1 AA Compliance Assessment:**
+- Built-in accessibility features and testing tools
+- Content management accessibility workflow support
+- Alternative text and media accessibility capabilities
+- Keyboard navigation and assistive technology compatibility
+- Accessibility reporting and compliance validation tools
 
-### 3. SECURITY CONFIGURATION ANALYSIS
-**NIST Cybersecurity Framework Implementation:**
-- Identify (ID): Asset management and risk assessment capabilities
-- Protect (PR): Access control, data security, and protective technology
-- Detect (DE): Anomaly detection and security monitoring
-- Respond (RS): Incident response and communication capabilities
-- Recover (RC): Recovery planning and improvements
+**NIST Cybersecurity Framework Alignment:**
+- **Identify (ID):** Asset inventory, risk assessment, and governance capabilities
+- **Protect (PR):** Access control, data security, protective technology integration
+- **Detect (DE):** Anomaly detection, security monitoring, and continuous assessment
+- **Respond (RS):** Incident response integration and communication capabilities
+- **Recover (RC):** Recovery planning, improvements, and business continuity support
 
-**Government Security Requirements:**
-- Multi-factor authentication integration
-- Role-based access control (RBAC) implementation
-- Data encryption at rest and in transit
-- Security patch management and update procedures
-- Vulnerability assessment and penetration testing support
+**Federal Authorization & Compliance:**
+- FedRAMP authorization status or clear pathway to authorization
+- FISMA compliance capabilities and security control inheritance
+- Authority to Operate (ATO) documentation and support
+- Government cloud compatibility (AWS GovCloud, Azure Government, Google Cloud for Government)
+- PIV/CAC authentication integration and enterprise identity management
 
-### 4. COST-BENEFIT ANALYSIS
-**Total Cost of Ownership (TCO) for Government:**
-- Initial licensing and implementation costs
-- Ongoing maintenance and support costs
-- Training and skill development requirements
-- Compliance and security monitoring costs
-- Long-term scalability and upgrade considerations
+### 2. GOVERNMENT CMS PLATFORM DETAILED EVALUATION
 
-## DELIVERABLE REQUIREMENTS:
-
-### **Primary Output: CMS Recommendation Report**
-**Executive Summary (300 words):**
-- Clear recommendation with supporting rationale
-- Compliance confidence assessment
-- Implementation timeline and resource requirements
-- Risk mitigation strategies
-
-**Detailed Platform Analysis (1,500 words):**
-- Feature comparison matrix against government requirements
-- Security and compliance capability assessment
-- Implementation complexity and resource analysis
-- Long-term sustainability and support evaluation
-
-**Security Implementation Plan (1,000 words):**
-- NIST framework mapping to chosen platform
-- Government security control implementation
-- Monitoring and incident response configuration
-- Compliance validation and reporting procedures
-
-**Implementation Roadmap (500 words):**
-- Phase-by-phase implementation approach
-- Resource allocation and timeline
-- Risk management and contingency planning
-- Stakeholder communication and approval process
-
-### **Supporting Outputs:**
-- **Technical Specification Document:** Detailed platform requirements and configuration
-- **Compliance Checklist:** Section 508, NIST, FISMA validation points
-- **Vendor Evaluation Matrix:** Scoring against government criteria
-- **Implementation Budget Estimate:** Cost breakdown with government procurement considerations
-
-## SUCCESS CRITERIA:
-- Recommendation aligned with Phase 1 technical requirements
-- Full compliance with federal accessibility and security standards
-- Clear implementation pathway with realistic timeline
-- Cost-effective solution appropriate for government budget cycles
-- Stakeholder confidence in recommendation with risk mitigation
+**Drupal for Government Analysis:**
