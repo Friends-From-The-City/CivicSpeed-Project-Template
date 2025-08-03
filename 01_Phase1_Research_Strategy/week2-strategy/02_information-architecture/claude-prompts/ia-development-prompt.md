@@ -1,428 +1,375 @@
+# Information Architecture Development - Claude Prompt
 
-# Claude Prompt: Information Architecture Designer
+## Context & Purpose
+You are developing comprehensive information architecture for a government digital transformation project. Your role is to create citizen-centered site structure that optimizes government service delivery, ensures accessibility compliance, and supports efficient cross-departmental operations while addressing all stakeholder priorities identified in Week 1 discovery.
 
-## Purpose
-This prompt transforms technical requirements into citizen-centered information architecture for government digital transformation projects. Creates IA that prioritizes citizen service delivery while meeting government compliance requirements and stakeholder priorities.
+**Analysis Objectives:**
+- Design citizen-centered information architecture based on Week 1 stakeholder insights
+- Optimize government service discovery and completion workflows
+- Ensure Section 508/WCAG 2.1 AA compliance throughout site structure
+- Create scalable architecture supporting future service expansion
+- Integrate technical constraints and capabilities from technical audit
+- Support cross-departmental coordination and data sharing
 
-## How to Use
-1. **Complete technical requirements first** using the Technical Requirements Generator
-2. **Copy the prompt below** into a new Claude conversation
-3. **Paste the technical requirements document** as input
-4. **Review IA structure** for citizen-centricity and compliance coverage
-5. **Validate with stakeholders** before proceeding to user journey mapping
-6. **Use output to guide** user journey development and Phase 2 design work
+## Required Inputs
+Before beginning analysis, ensure you have:
 
----
+1. **Week 1 Stakeholder Interview Synthesis** (citizen needs, service priorities, pain points)
+2. **Technical Requirements Analysis** (platform capabilities, compliance requirements, performance constraints)
+3. **Current Site Technical Audit** (existing structure analysis, performance baseline)
+4. **Government Agency Context:**
+   - Agency type and primary service focus
+   - Department structure and service distribution
+   - Current website traffic patterns and peak usage
+   - Cross-departmental integration requirements
+   - Budget parameters for implementation
 
-## THE CLAUDE PROMPT
-**Copy everything from this line down to the end of the code block into Claude:**
+## Information Architecture Framework
 
+### Pre-Analysis Setup
+**Discovery Foundation Validation:**
+- [ ] **Stakeholder priorities** documented and prioritized by citizen impact
+- [ ] **Service delivery workflows** mapped from citizen and staff interviews
+- [ ] **Technical constraints** understood from audit and requirements analysis
+- [ ] **Compliance requirements** identified (Section 508, state/local standards)
+- [ ] **Content inventory** completed for existing site structure
+- [ ] **User mental models** documented from stakeholder feedback
+
+**Government Context Integration:**
+- [ ] **Departmental service boundaries** understood and mapped
+- [ ] **Inter-agency coordination** requirements identified
+- [ ] **Public information access** mandates documented
+- [ ] **Emergency service protocols** integrated into structure planning
+- [ ] **Multilingual requirements** assessed and planned
+- [ ] **Mobile-first usage patterns** validated from technical audit
+
+## Analysis Template
+
+Generate comprehensive IA documentation using this exact structure:
+
+### INFORMATION ARCHITECTURE OVERVIEW
+**Government Agency:** [Full agency name and jurisdiction level]  
+**IA Development Date:** [Current analysis date]  
+**Stakeholder Foundation:** [Week 1 discovery completion date]  
+**Technical Foundation:** [Technical requirements completion date]  
+**Implementation Target:** [Phase 2 design integration timeline]
+
+**Architecture Scope:**
+- **Primary Services Covered:** [Core government services included in IA]
+- **User Types Supported:** [All user categories from stakeholder analysis]
+- **Content Volume:** [Estimated pages/content items for structure]
+- **Integration Requirements:** [External systems and departments]
+
+### CITIZEN-CENTERED CONTENT STRATEGY
+
+#### Service Discovery Optimization
+**Primary Citizen Pathways:**
+- **[Service Category]:** [How citizens naturally group and seek these services]
+  - **Mental Model Rationale:** [Why citizens expect this grouping based on stakeholder insights]
+  - **Discovery Method:** [How citizens typically learn about or search for these services]
+  - **Completion Workflow:** [End-to-end process from awareness to service completion]
+  - **Cross-Service Connections:** [Related services citizens often need simultaneously]
+  - **Support Requirements:** [Help, documentation, and assistance needs]
+
+- **[Service Category]:** [How citizens naturally group and seek these services]
+  - **Mental Model Rationale:** [Why citizens expect this grouping based on stakeholder insights]
+  - **Discovery Method:** [How citizens typically learn about or search for these services]  
+  - **Completion Workflow:** [End-to-end process from awareness to service completion]
+  - **Cross-Service Connections:** [Related services citizens often need simultaneously]
+  - **Support Requirements:** [Help, documentation, and assistance needs]
+
+**Citizen Journey Integration:**
+- **New Citizens:** [IA structure supporting first-time government interaction]
+- **Returning Citizens:** [Architecture enabling efficient service updates and renewals]
+- **Emergency Situations:** [Priority access and clear pathways for urgent needs]
+- **Business Users:** [Separate but integrated pathways for business services]
+- **Multi-Language Users:** [Content organization supporting language accessibility]
+
+#### Content Hierarchy Strategy
+**Level 1 (Primary Navigation):**
 ```
-You are designing information architecture for a government digital transformation project using the CivicSpeed methodology. Create citizen-centered IA that prioritizes service delivery while meeting government compliance requirements and supporting stakeholder priorities identified in technical requirements.
-
-**PROJECT CONTEXT:**
-- Agency: [AGENCY_NAME]
-- Project: [PROJECT_NAME]
-- Phase: Week 2 Information Architecture Development
-- Methodology: CivicSpeed AI-Accelerated Government Digital Transformation
-- Focus: Citizen-centered service delivery with government compliance
-
-**TECHNICAL REQUIREMENTS INPUT:**
-[PASTE COMPLETE TECHNICAL REQUIREMENTS DOCUMENT HERE]
-
-**INFORMATION ARCHITECTURE FRAMEWORK:**
-Design IA across 6 critical dimensions for government digital services:
-
-## IA DESIGN METHODOLOGY
-
-### 1. CITIZEN-FIRST APPROACH
-**Service-Centered Organization:**
-- Organize by citizen needs and tasks, not government structure
-- Prioritize most common citizen interactions
-- Minimize cognitive load for service discovery
-
-**Accessibility-First Design:**
-- Multiple pathways to the same information
-- Clear language and plain English requirements
-- Visual and text-based navigation options
-
-### 2. GOVERNMENT COMPLIANCE INTEGRATION
-**Transparency Requirements:**
-- Public information accessibility
-- Clear government contact information
-- Required disclosure and notice placements
-
-**Approval Workflow Support:**
-- Multi-level approval process integration
-- Status tracking and communication
-- Document management and version control
-
-### 3. TECHNICAL CONSTRAINT ACCOMMODATION
-**Performance Optimization:**
-- IA structure supports technical performance requirements
-- Content grouping reduces system load
-- Efficient data retrieval patterns
-
-**Integration-Friendly Design:**
-- IA supports backend system integrations
-- Clear data flow pathways
-- Scalable content organization
-
-**OUTPUT FORMAT:**
-Present information architecture using this exact structure:
-
-## EXECUTIVE SUMMARY
-**IA Approach:** [Service-centered/Hybrid/Department-centered with rationale]
-**Primary Navigation Strategy:** [How citizens will navigate services]
-**Content Organization Principle:** [Key organizing principle for information]
-**Accessibility Level:** [WCAG 2.1 AA compliance approach]
-**Technical Compatibility:** [How IA supports technical requirements]
-
-## SITE ARCHITECTURE OVERVIEW
-
-### Top-Level Navigation Structure
-**Primary Navigation:** (Maximum 7 items for cognitive load management)
-1. **[Navigation Item 1]**
-   - **Purpose:** [What citizen need this serves]
-   - **Content:** [What information/services are included]
-   - **User Priority:** [High/Medium/Low based on technical requirements]
-   - **Technical Notes:** [Any performance or integration considerations]
-
-2. **[Navigation Item 2]**
-   - **Purpose:** [What citizen need this serves]
-   - **Content:** [What information/services are included]
-   - **User Priority:** [High/Medium/Low based on technical requirements]
-   - **Technical Notes:** [Any performance or integration considerations]
-
-3. **[Navigation Item 3]**
-   - **Purpose:** [What citizen need this serves]
-   - **Content:** [What information/services are included]
-   - **User Priority:** [High/Medium/Low based on technical requirements]
-   - **Technical Notes:** [Any performance or integration considerations]
-
-**Secondary Navigation:** (Support and compliance items)
-- **About/Transparency:** [Required government information]
-- **Contact/Support:** [Help and contact information]
-- **Accessibility:** [Accessibility resources and alternative formats]
-- **Legal/Privacy:** [Legal notices and privacy information]
-
-### Information Hierarchy
-**Level 1: Service Categories** (Based on citizen needs from technical requirements)
-```
-[Service Category 1]
-├── [Service 1.1]
-├── [Service 1.2]
-└── [Service 1.3]
-
-[Service Category 2]
-├── [Service 2.1]
-├── [Service 2.2]
-└── [Service 2.3]
+[Primary Category Name] - [Rationale from citizen mental models]
+├── Service subcategory based on citizen task groupings
+├── Information subcategory based on transparency requirements  
+├── Support subcategory based on citizen assistance needs
+└── Department subcategory based on government structure (where citizen-beneficial)
 ```
 
-**Level 2: Service Details** (Individual service pages)
-- Service description and eligibility
-- Step-by-step process guidance
-- Required documents and forms
-- Timeline and processing information
-- Contact information for questions
+**Level 2-3 Content Organization:**
+```
+Service Category > Specific Service > Service Completion
+├── Service Overview (what, why, eligibility)
+├── Requirements & Process (how, when, where)
+├── Forms & Applications (digital service delivery)
+├── Status & Follow-up (tracking and next steps)
+└── Help & Support (assistance and troubleshooting)
+```
 
-**Level 3: Support Content** (Help and guidance)
-- Frequently asked questions
-- How-to guides and tutorials
-- Troubleshooting information
-- Alternative service access methods
+**Content Governance Structure:**
+- **Department Ownership:** [Which departments own which content areas]
+- **Update Responsibilities:** [Content maintenance and currency requirements]
+- **Quality Standards:** [Content accessibility, plain language, accuracy standards]
+- **Review Cycles:** [Regular content validation and improvement processes]
 
-## DETAILED INFORMATION ARCHITECTURE
+### NAVIGATION ARCHITECTURE DESIGN
 
-### Service-Centered Organization
-**[Primary Service Category 1]** (Based on technical requirements priority)
-- **Overview Page:** [What citizens see first - service summary and entry points]
-- **Eligibility & Requirements:** [Who can use service, what's needed]
-- **Application Process:** [Step-by-step service process]
-- **Forms & Documents:** [Required forms, supporting documents]
-- **Status & Tracking:** [How to check application/request status]
-- **Contact & Support:** [Service-specific help and contact information]
-- **Related Services:** [Connected or similar services]
+#### Primary Navigation Strategy
+**Top-Level Navigation Rationale:**
+1. **[Navigation Item]:** [Citizen service need this addresses]
+   - **Scope:** [Services and content included]
+   - **Target Users:** [Primary and secondary user types]
+   - **Usage Patterns:** [When and how citizens access this section]
+   - **Mobile Considerations:** [Mobile-specific navigation needs]
+   - **Accessibility Features:** [Screen reader, keyboard navigation requirements]
 
-**Content Strategy:**
-- **Plain Language Requirement:** [How content will meet plain language standards]
-- **Multi-Format Support:** [Text, video, audio alternatives]
-- **Translation Needs:** [Languages beyond English that must be supported]
-- **Update Frequency:** [How often content needs refreshing]
+2. **[Navigation Item]:** [Citizen service need this addresses]
+   - **Scope:** [Services and content included]
+   - **Target Users:** [Primary and secondary user types]
+   - **Usage Patterns:** [When and how citizens access this section]
+   - **Mobile Considerations:** [Mobile-specific navigation needs]
+   - **Accessibility Features:** [Screen reader, keyboard navigation requirements]
 
-**Technical Integration:**
-- **Backend Connections:** [Which systems provide data for this category]
-- **Real-Time Requirements:** [What information must be live/current]
-- **Performance Considerations:** [Page load and search requirements]
+3. **[Navigation Item]:** [Citizen service need this addresses]
+   - **Scope:** [Services and content included]
+   - **Target Users:** [Primary and secondary user types]
+   - **Usage Patterns:** [When and how citizens access this section]
+   - **Mobile Considerations:** [Mobile-specific navigation needs]
+   - **Accessibility Features:** [Screen reader, keyboard navigation requirements]
 
-### User Account & Authentication Area
-**Account Management Structure:** (If applicable based on technical requirements)
-- **Login/Registration:** [Account creation and access]
-- **Dashboard/My Services:** [Personalized service overview]
-- **Application History:** [Past and current service requests]
-- **Document Library:** [Saved forms and uploaded documents]
-- **Notification Preferences:** [Communication settings]
-- **Profile Management:** [Personal information updates]
+#### Secondary Navigation Systems
+**Utility Navigation:**
+- **Account/Login:** [Citizen account access and management]
+- **Search:** [Government content and service search functionality]
+- **Language Options:** [Multi-language content access]
+- **Accessibility Tools:** [Text size, contrast, screen reader optimization]
+- **Emergency Information:** [Crisis services and urgent information access]
 
-**Privacy & Security:**
-- **Data Protection:** [How personal information is protected]
-- **Access Controls:** [What users can see and modify]
-- **Session Management:** [Login duration and security measures]
+**Footer Navigation:**
+- **Transparency Information:** [Required government transparency content]
+- **Legal Information:** [Privacy, terms, accessibility statements]
+- **Contact Information:** [Department contacts, office locations, hours]
+- **Government Structure:** [About agency, leadership, organizational information]
 
-### Administrative & Staff Areas
-**Staff Interface Organization:** (Based on technical requirements for staff functions)
-- **Dashboard:** [Overview of pending work and priorities]
-- **Application Processing:** [Tools for reviewing and approving requests]
-- **Document Management:** [File storage and version control]
-- **Reporting & Analytics:** [Performance metrics and compliance reporting]
-- **System Administration:** [User management and system configuration]
+**Breadcrumb Strategy:**
+- **Service Completion Support:** [Help citizens understand their location in complex processes]
+- **Content Relationship Clarity:** [Show content connections and hierarchy]
+- **Back Navigation:** [Easy return to previous steps or sections]
 
-**Workflow Integration:**
-- **Approval Processes:** [How multi-level approvals are structured]
-- **Status Tracking:** [How staff track application progress]
-- **Communication Tools:** [Internal messaging and citizen communication]
+#### Mobile Navigation Optimization
+**Mobile-First Considerations:**
+- **Touch Target Sizing:** [Navigation elements sized for finger interaction]
+- **Thumb Navigation Zones:** [Primary actions within easy thumb reach]
+- **Progressive Disclosure:** [Revealing information hierarchy gradually]
+- **Offline Access Planning:** [Critical service information available offline]
 
-## CONTENT STRATEGY
+**Responsive Navigation Patterns:**
+- **Hamburger Menu Strategy:** [When and how to collapse navigation]
+- **Tab Bar Navigation:** [Bottom navigation for frequent actions]
+- **Search Prominence:** [Mobile search visibility and functionality]
 
-### Content Types & Organization
-**Service Content:** (Primary citizen-facing content)
-1. **Service Descriptions**
-   - **Format:** [Standardized description template]
-   - **Length:** [Target length for scannability]
-   - **Required Elements:** [Eligibility, process, timeline, contacts]
-   - **Accessibility:** [Alt text, plain language, multiple formats]
+### ACCESSIBILITY COMPLIANCE ARCHITECTURE
 
-2. **Process Guidance**
-   - **Step-by-Step Instructions:** [Numbered processes with visual aids]
-   - **Decision Trees:** [Help citizens find the right path]
-   - **Checklists:** [Required documents and preparation items]
-   - **Video Tutorials:** [For complex processes]
+#### WCAG 2.1 AA Integration
+**Perceivable Architecture:**
+- **Color Independence:** [Navigation and content organization not dependent on color alone]
+- **Text Scalability:** [IA structure maintains usability at 200% text size]
+- **Alternative Content:** [Structure accommodates alt text, captions, transcripts]
+- **Contrast Requirements:** [Navigation elements meet contrast standards]
 
-3. **Forms & Documents**
-   - **Form Organization:** [How forms are categorized and found]
-   - **Version Control:** [How form updates are managed]
-   - **Accessibility:** [Screen reader compatibility, large print options]
-   - **Multi-Language:** [Translation and cultural adaptation]
+**Operable Architecture:**
+- **Keyboard Navigation:** [Complete site navigation possible without mouse]
+- **Focus Management:** [Logical focus order throughout complex structures]
+- **Timing Considerations:** [No time limits on government service completion]
+- **Seizure Prevention:** [Content organization avoids flashing or animation triggers]
 
-**Support Content:** (Help and guidance)
-- **FAQ Organization:** [How questions are grouped and searchable]
-- **Help Articles:** [Detailed guidance for common issues]
-- **Contact Information:** [Service-specific and general contact options]
-- **Accessibility Resources:** [Alternative access methods and accommodations]
+**Understandable Architecture:**
+- **Consistent Navigation:** [Predictable navigation patterns throughout site]
+- **Clear Labeling:** [Navigation and content labels use plain language]
+- **Error Prevention:** [IA structure reduces user errors in service completion]
+- **Help Integration:** [Contextual help available throughout site structure]
 
-### Content Management Requirements
-**Update Workflows:** (Based on technical requirements for staff functions)
-- **Content Approval:** [Who approves different types of content updates]
-- **Publication Schedule:** [When and how content goes live]
-- **Version Control:** [How content changes are tracked and managed]
-- **Quality Assurance:** [Content review and validation processes]
+**Robust Architecture:**
+- **Assistive Technology:** [Structure compatible with screen readers, voice navigation]
+- **Future Compatibility:** [IA approach adaptable to new accessibility technologies]
+- **Standards Compliance:** [Architecture meets current and emerging accessibility standards]
 
-**Compliance Requirements:**
-- **Legal Review:** [What content requires legal approval]
-- **Accessibility Testing:** [How content accessibility is validated]
-- **Plain Language:** [Content review for clarity and understanding]
-- **Translation Management:** [How multi-language content is maintained]
+#### Section 508 Government Requirements
+**Electronic Accessibility:**
+- **Federal Compliance:** [If federal agency, full Section 508 compliance integration]
+- **State Standards:** [State-specific accessibility requirements]
+- **Local Requirements:** [Municipal accessibility standards and policies]
 
-## NAVIGATION DESIGN
+**Document Accessibility Integration:**
+- **PDF Strategy:** [How PDFs integrate with overall IA structure]
+- **Form Accessibility:** [Government forms integrated into accessible workflows]
+- **Media Strategy:** [Video and audio content integration with accessibility]
 
-### Primary Navigation Strategy
-**Navigation Approach:** [Horizontal menu/Vertical menu/Mega menu based on content volume]
-- **Rationale:** [Why this approach best serves citizen needs]
-- **Accessibility Features:** [Keyboard navigation, screen reader support]
-- **Mobile Optimization:** [How navigation works on small screens]
-- **Performance Impact:** [How navigation affects page load times]
+### GOVERNMENT SERVICE DELIVERY OPTIMIZATION
 
-### Search & Discovery
-**Search Functionality:** (Based on technical requirements for search performance)
-- **Search Scope:** [What content is searchable]
-- **Search Features:** [Auto-complete, spell correction, filters]
-- **Result Organization:** [How search results are ranked and displayed]
-- **Advanced Search:** [Filters and refinement options]
+#### Cross-Departmental Integration
+**Service Integration Points:**
+- **[Department A] + [Department B]:** [Services requiring inter-departmental coordination]
+  - **Citizen Journey Impact:** [How integration improves citizen experience]
+  - **Data Sharing Requirements:** [Information that must flow between departments]
+  - **Workflow Coordination:** [Staff processes requiring coordination]
+  - **IA Structure Support:** [How site architecture facilitates integration]
 
-**Alternative Discovery Methods:**
-- **Browse by Category:** [Topic-based browsing options]
-- **Browse by Audience:** [Role-based content organization]
-- **Popular Services:** [Most-used services prominently featured]
-- **Related Content:** [Cross-linking strategy for related information]
+- **[Department C] + [Department D]:** [Services requiring inter-departmental coordination]
+  - **Citizen Journey Impact:** [How integration improves citizen experience]
+  - **Data Sharing Requirements:** [Information that must flow between departments]
+  - **Workflow Coordination:** [Staff processes requiring coordination]
+  - **IA Structure Support:** [How site architecture facilitates integration]
 
-### Breadcrumbs & Wayfinding
-**Orientation Tools:**
-- **Breadcrumb Strategy:** [How users understand their location]
-- **Page Titles:** [Clear, descriptive page naming]
-- **Section Indicators:** [Visual cues for site areas]
-- **Progress Indicators:** [For multi-step processes]
+**Shared Service Architecture:**
+- **Common Forms:** [Forms used across multiple departments]
+- **Shared Authentication:** [Single sign-on for citizen accounts across services]
+- **Document Sharing:** [Citizens providing documents once for multiple services]
+- **Status Integration:** [Unified status tracking across departments]
 
-## RESPONSIVE & ACCESSIBLE DESIGN
+#### Emergency and Priority Service Architecture
+**Crisis Communication Structure:**
+- **Emergency Alerts:** [How urgent information integrates with normal site structure]
+- **Priority Service Access:** [Fast-track navigation for emergency services]
+- **Alternative Access Methods:** [IA structure when normal access is disrupted]
 
-### Multi-Device Strategy
-**Device Optimization:** (Based on technical requirements for multi-device support)
-- **Mobile-First Approach:** [How content prioritization changes by device]
-- **Tablet Considerations:** [Unique tablet interaction patterns]
-- **Desktop Enhancement:** [Additional features for larger screens]
-- **Print Optimization:** [How content appears when printed]
+**High-Volume Service Optimization:**
+- **Peak Usage Planning:** [IA structure supporting traffic spikes]
+- **Load Distribution:** [Content organization supporting performance under load]
+- **Service Prioritization:** [Critical vs. routine service access hierarchy]
 
-### Accessibility Integration
-**WCAG 2.1 AA Implementation:**
-- **Navigation Accessibility:** [Keyboard navigation, focus management]
-- **Content Accessibility:** [Alt text strategy, heading structure]
-- **Form Accessibility:** [Label association, error handling]
-- **Media Accessibility:** [Captions, transcripts, audio descriptions]
+### TECHNICAL INTEGRATION REQUIREMENTS
 
-**Government-Specific Accessibility:**
-- **Section 508 Compliance:** [Federal accessibility requirements]
-- **Plain Language:** [Content complexity and readability standards]
-- **Multiple Format Support:** [Large print, audio, simplified versions]
-- **Assistive Technology:** [Screen reader and voice recognition support]
-
-## TECHNICAL IMPLEMENTATION SUPPORT
-
-### Performance Optimization
-**Content Organization for Speed:** (Based on technical requirements for performance)
-- **Page Weight Management:** [How content grouping affects load times]
-- **Image Optimization:** [Image usage and optimization strategy]
-- **Content Caching:** [What content can be cached for performance]
-- **Progressive Loading:** [How content loads incrementally]
-
-### Backend Integration Support
+#### Platform Architecture Alignment
 **Content Management Integration:**
-- **CMS Structure:** [How IA maps to content management system]
-- **Workflow Integration:** [How IA supports approval processes]
-- **Data Integration:** [How IA accommodates real-time data]
-- **API Organization:** [How IA structure supports API design]
+- **CMS Compatibility:** [IA structure fitting technical platform capabilities]
+- **Content Workflow:** [How content creation and updates align with IA]
+- **Multi-Site Management:** [IA approach for agencies with multiple sites]
+- **Version Control:** [Content versioning and approval workflows]
 
-### Scalability Planning
-**Growth Accommodation:**
-- **Content Expansion:** [How IA handles new services and content]
-- **User Growth:** [How IA performs with increased usage]
-- **Feature Addition:** [How new functionality integrates with existing IA]
-- **Maintenance Efficiency:** [How IA supports ongoing management]
+**Search and Discovery Integration:**
+- **Site Search Strategy:** [How search integrates with navigation architecture]
+- **External Search Optimization:** [SEO strategy supporting government service discovery]
+- **Content Tagging:** [Metadata strategy supporting content discovery]
 
-## COMPLIANCE & GOVERNANCE
+#### Performance and Scale Considerations
+**Load Time Optimization:**
+- **Content Delivery:** [IA structure supporting fast content access]
+- **Image and Media Strategy:** [How multimedia content integrates with architecture]
+- **Progressive Loading:** [Content prioritization for performance]
 
-### Government Requirements Integration
-**Transparency Requirements:**
-- **Public Information Access:** [Required government information placement]
-- **Contact Requirements:** [Government contact information standards]
-- **Legal Notices:** [Required legal and policy information]
-- **Accessibility Statements:** [Accessibility policy and contact information]
+**Scalability Planning:**
+- **Growth Accommodation:** [IA structure expandable for new services]
+- **Traffic Scaling:** [Architecture supporting increased usage]
+- **Content Volume:** [Structure handling growing content inventory]
 
-**Multi-Language Compliance:**
-- **Primary Language:** [English language requirements]
-- **Secondary Languages:** [Additional languages based on community needs]
-- **Translation Standards:** [Quality and accuracy requirements]
-- **Cultural Adaptation:** [Beyond translation - cultural considerations]
+### STAKEHOLDER ALIGNMENT VALIDATION
 
-### Quality Assurance Framework
-**Content Quality Standards:**
-- **Accuracy Requirements:** [How content accuracy is maintained]
-- **Currency Standards:** [How often content must be updated]
-- **Consistency Guidelines:** [Style and format consistency across content]
-- **User Testing:** [How IA effectiveness is validated with real users]
+#### Week 1 Discovery Integration
+**Citizen Stakeholder Validation:**
+- **[Key Citizen Need]:** [How IA structure addresses this stakeholder priority]
+  - **Discovery Source:** [Which stakeholder interviews identified this need]
+  - **IA Solution:** [Specific architecture decisions addressing the need]
+  - **Success Measurement:** [How to validate that architecture meets the need]
 
-## STAKEHOLDER VALIDATION
+- **[Key Citizen Need]:** [How IA structure addresses this stakeholder priority]
+  - **Discovery Source:** [Which stakeholder interviews identified this need]
+  - **IA Solution:** [Specific architecture decisions addressing the need]
+  - **Success Measurement:** [How to validate that architecture meets the need]
 
-### Review Process
-**Stakeholder Review Structure:**
-- **Citizen Testing:** [How IA is tested with real citizens]
-- **Staff Validation:** [How staff workflows are validated against IA]
-- **Technical Review:** [How IA supports technical requirements]
-- **Compliance Review:** [How IA meets all regulatory requirements]
+**Staff Stakeholder Validation:**
+- **[Staff Workflow Need]:** [How IA supports internal operations]
+  - **Operational Impact:** [How architecture improves staff efficiency]
+  - **Content Management:** [How staff will maintain and update content]
+  - **Citizen Support:** [How architecture helps staff assist citizens]
 
-**Approval Criteria:**
-- [ ] IA prioritizes citizen service delivery over government structure
-- [ ] Navigation supports identified user groups and their tasks
-- [ ] Content organization reduces cognitive load for citizens
-- [ ] Accessibility requirements fully integrated into IA structure
-- [ ] Technical requirements supported by IA organization
-- [ ] Compliance requirements addressed throughout IA
-- [ ] Staff workflows accommodated in IA design
-- [ ] Scalability and maintenance considerations included
-- [ ] Performance requirements supported by content organization
-- [ ] Multi-device and responsive needs addressed
+**Executive Stakeholder Validation:**
+- **[Strategic Priority]:** [How IA advances agency strategic goals]
+  - **Service Delivery:** [Architecture impact on government service mission]
+  - **Efficiency Gains:** [Operational improvements enabled by structure]
+  - **Compliance Achievement:** [How architecture ensures regulatory compliance]
 
-## USER JOURNEY PREPARATION
+#### Technical Stakeholder Integration
+**IT Requirements Alignment:**
+- **[Technical Constraint]:** [How IA accommodates technical limitations]
+- **[Integration Need]:** [Architecture decisions supporting technical requirements]
+- **[Security Requirement]:** [IA structure supporting security and privacy needs]
 
-### Journey Mapping Support
-**IA-to-Journey Connection:**
-- **Primary User Paths:** [Most important citizen journeys through IA]
-- **Alternative Pathways:** [Different ways to accomplish the same task]
-- **Error Recovery:** [How IA helps when citizens get lost or confused]
-- **Cross-Service Connections:** [How related services connect in IA]
+### IMPLEMENTATION PLANNING
 
-**Journey Starting Points:**
-- **Homepage Pathways:** [How different user types enter the system]
-- **Direct Entry Points:** [Deep links and external referrals]
-- **Search Entry:** [How search results lead to service completion]
-- **Return User Paths:** [How returning users navigate efficiently]
+#### Phase 2 Design Integration
+**Design Team Handoff Requirements:**
+1. **Visual Design Foundation:** [IA decisions that will guide visual design]
+   - **Navigation Design Specs:** [Specific requirements for navigation components]
+   - **Content Layout Requirements:** [How content hierarchy affects visual design]
+   - **Responsive Design Guidelines:** [Mobile-first architecture implications]
 
-## SUCCESS METRICS
+2. **User Experience Design Foundation:** [IA decisions informing UX design]
+   - **User Flow Integration:** [How site architecture supports user journeys]
+   - **Interaction Design Requirements:** [IA elements requiring specific interactions]
+   - **Accessibility Design Standards:** [Compliance requirements affecting UX design]
 
-### IA Effectiveness Measures
-**User Success Metrics:**
-- **Task Completion Rate:** [Percentage of users who complete intended tasks]
-- **Time to Find Information:** [How quickly users locate needed information]
-- **Navigation Efficiency:** [Number of clicks/pages to complete tasks]
-- **User Satisfaction:** [Satisfaction scores for information findability]
+3. **Content Strategy Implementation:** [IA requirements for content development]
+   - **Content Creation Guidelines:** [Content requirements based on architecture]
+   - **Content Migration Planning:** [How existing content fits new structure]
+   - **Content Governance Implementation:** [Ongoing content management processes]
 
-**Technical Success Metrics:**
-- **Page Load Performance:** [How IA organization affects performance]
-- **Search Effectiveness:** [Search success and refinement rates]
-- **Mobile Usage Patterns:** [How IA performs across devices]
-- **Accessibility Compliance:** [Automated and manual accessibility testing results]
+#### Development Implementation Planning
+**Technical Development Requirements:**
+- **Database Architecture:** [Content structure requirements for development]
+- **URL Structure:** [SEO-friendly URL patterns based on IA]
+- **Navigation Implementation:** [Technical requirements for navigation functionality]
+- **Search Implementation:** [Search functionality requirements]
 
-### Continuous Improvement
-**IA Optimization Process:**
-- **User Feedback Integration:** [How user feedback improves IA]
-- **Analytics-Driven Changes:** [How usage data informs IA updates]
-- **Content Performance:** [How content effectiveness drives IA refinements]
-- **Technical Performance:** [How system performance influences IA decisions]
+**Quality Assurance Integration:**
+- **IA Testing Requirements:** [How to validate that development matches IA]
+- **User Testing Integration:** [Testing IA decisions with real users]
+- **Accessibility Testing:** [Compliance validation throughout development]
 
-**INFORMATION ARCHITECTURE CONFIDENCE LEVEL:** [High/Medium/Low]
-**READINESS FOR USER JOURNEY MAPPING:** [Ready/Needs Work/Blocked]
-**CRITICAL IA DEPENDENCIES:** [Any dependencies that could affect IA implementation]
-```
+### QUALITY ASSURANCE STANDARDS
 
-**IA DESIGN INSTRUCTIONS:**
-1. Prioritize citizen service delivery over government organizational structure
-2. Integrate accessibility requirements into every aspect of IA design
-3. Ensure IA supports all technical requirements identified in previous analysis
-4. Balance compliance requirements with user experience optimization
-5. Design for scalability - IA must accommodate future services and content
-6. Consider multi-device usage patterns from the start
-7. Prepare IA structure to support detailed user journey mapping
+#### IA Completeness Verification
+- [ ] All citizen service needs from Week 1 stakeholder analysis addressed in IA structure
+- [ ] Navigation architecture supports all identified user types and workflows
+- [ ] Content hierarchy enables efficient service discovery and completion
+- [ ] Cross-departmental integration requirements incorporated into structure
+- [ ] Emergency and priority service access clearly established in architecture
+- [ ] Mobile-first approach validated throughout all IA decisions
 
----
+#### Government Compliance Confirmation
+- [ ] Section 508 accessibility requirements integrated throughout IA structure
+- [ ] WCAG 2.1 AA compliance validated for all navigation and content organization
+- [ ] Government transparency requirements accommodated in content strategy
+- [ ] Multi-language accessibility planned and integrated where required
+- [ ] Plain language principles applied to all navigation and content labeling
 
-## Usage Notes
+#### Technical Integration Validation
+- [ ] IA structure compatible with technical requirements and platform capabilities
+- [ ] Performance requirements addressed in content organization and structure
+- [ ] Security and privacy requirements integrated into architecture planning
+- [ ] Scalability considerations incorporated for future growth and service expansion
+- [ ] Content management workflow aligned with government operational needs
 
-### Before IA Design
-- **Confirm technical requirements are complete** and stakeholder-approved
-- **Review agency-specific content and compliance requirements**
-- **Identify any existing content** that must be accommodated
-- **Understand citizen user research** if available from previous projects
+#### Stakeholder Alignment Verification
+- [ ] All Week 1 stakeholder priorities directly addressed in IA decisions
+- [ ] Citizen mental models and service expectations reflected in content organization
+- [ ] Staff operational needs supported through architecture and content strategy
+- [ ] Executive strategic goals advanced through IA structure and service integration
+- [ ] Technical stakeholder constraints and requirements accommodated throughout
 
-### During IA Design
-- **Focus on citizen tasks, not government structure** - organize by what citizens need to do
-- **Test navigation concepts** mentally by walking through common citizen scenarios
-- **Balance depth vs. breadth** - avoid both too-shallow and too-deep information hierarchies
-- **Consider content volume** - IA must work with realistic content loads
+## Integration with Week 1 Foundation
 
-### After IA Design
-- **Validate with representative citizens** if possible before finalizing
-- **Review with technical stakeholders** to ensure implementability
-- **Get compliance review** for government requirement coverage
-- **Prepare for user journey mapping** by identifying key user paths
+### Discovery Synthesis Integration
+- [ ] **Citizen priorities** directly inform primary navigation and content hierarchy
+- [ ] **Service delivery challenges** addressed through IA structure and workflow integration
+- [ ] **Accessibility gaps** resolved through comprehensive compliance architecture
+- [ ] **Cross-departmental needs** accommodated through integration planning
 
-### Quality Standards
-- **Citizen-centered organization** prioritizes service delivery over government structure
-- **Accessibility integration** ensures WCAG 2.1 AA compliance throughout
-- **Technical compatibility** supports all identified performance and integration requirements
-- **Scalable design** accommodates future growth and changes
+### Week 2 Strategy Foundation
+- [ ] **IA structure** ready for user journey mapping and optimization
+- [ ] **Content strategy** prepared for detailed user experience design
+- [ ] **Navigation architecture** validated for technical implementation planning
+- [ ] **Accessibility framework** established for comprehensive compliance validation
 
 ---
 
-## File Naming Convention
-Save IA design as: `Information-Architecture-[ProjectName]-[Date].md`
-
-Example: `Information-Architecture-Denver-Parks-Portal-2024-03-24.md`
+**Quality Guarantee:** This information architecture framework ensures comprehensive citizen-centered structure that advances government service delivery mission while maintaining strict accessibility compliance and supporting all stakeholder priorities identified in discovery phase.
